@@ -1,0 +1,8 @@
+const { buffer } = require("node:stream/consumers");
+
+var bur=new buffer(256);
+bur.fill(0);
+bur.write("hii");
+console.log(bur.toString());
+bur.write("more text",10,9);
+console.log(bur.toString());
